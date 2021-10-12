@@ -131,6 +131,7 @@ body {
   background-position: bottom center;
   background-size: contain;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   font-size: 40px;
@@ -189,26 +190,160 @@ body {
   margin-bottom: 16px;
   margin-inline: auto;
 }
-
+/* Need to edit */
 .main-program ul.programList {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 16px;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 10%;
 }
 
 .main-program ul.programList li.prg-card {
-  width: 90%;
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 3%;
+  padding: 15px;
+  margin-right: 7px;
   background-color: #ffffff20;
-  border: 2px solid white;
-  margin: 10px 2px 7px 18px;
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+  border: 2px solid transparent;
   color: #fff;
+}
+
+.main-program .prg-icon .material-icons {
+  height: 30%;
+  width: 20%;
+  margin-left: 2%;
+}
+
+.main-program .prg-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3%;
+  width: 40%;
+  color: #e64331;
+  text-align: left;
+  align-self: center;
+}
+
+.main-program .prg-des {
+  font-size: 16px;
+  margin-left: 5%;
+}
+
+.main-program .button-prg {
+  width: 70%;
+  height: 70px;
+  justify-content: center;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  border: none;
+  background-color: rgb(196, 64, 41);
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Expert Card */
+
+.experts h2{
+  text-align: center;
+}
+
+.experts .underline {
+  background-color: #ec5241;
+  width: 45px;
+  height: 2px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  margin-inline: auto;
+}
+
+.expertsInfo {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 10%;
+}
+
+.expertsInfo .expertCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 3%;
+  padding: 15px;
+  margin-right: 7px;
+}
+/* Partner */
+.partner-section {
+  background-color: #3f444f;
+}
+
+.partner-section h2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.partner-section .underline {
+  background-color: #ec5241;
+  width: 45px;
+  height: 2px;
+  margin-bottom: 16px;
+  margin-inline: auto;
+}
+
+.partnersContainer {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.partners-list {
+  width: 100%;
+}
+
+
+.partners-list img {
+  filter:
+    invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
+    brightness(102%) contrast(105%);
+  margin-block: 10%;
+}
+
+.partners-logo1 {
+  width: 125px;
+  height: 40px;
+}
+
+/* Footer */
+footer {
+  min-height: 80px;
+}
+
+.footerContainer {
+  height: 150px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.footerContainer .websiteLogo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0c0c0c;
+}
+
+.footerContainer .copyrights {
+  line-height: 16px;
+  font-size: 8px;
+  color: #3d3d3d;
+  font-weight: 400;
+  font-family: 'Cocogoose',sans-serif;
 }
 
 
@@ -234,6 +369,9 @@ body {
   .navnarright {
       display: none;
   }
+  .main-program .button-desktop-prg {
+    display: none;
+  }
 }
 
 /* End of Mobile Menu */
@@ -244,7 +382,7 @@ body {
     .header .navbar1 {
       display: flex;
       background-color: #3d3d3d;
-      padding: 10px 250px;
+      padding: 5px 250px;
       justify-content: flex-end;
     }
   
@@ -268,7 +406,7 @@ body {
       display: flex;
       background-color: #fff;
       justify-content: space-between;
-      padding: 10px 200px;
+      padding: 5px 200px;
       border: 1px solid #fff;
       box-shadow: 0 0.25rem 2rem 0.5rem rgba(0, 0, 0, 0.3); /* Need to update*/
   }
@@ -281,12 +419,11 @@ body {
   
   .header .navbar2 .navbarright a,
   .header .navbar2 .navbarright .nav-btn {
-      padding: 15px 20px;
-      margin: 10px 5px;
+      padding: 10px 20px;
+      margin: 5px 5px;
       text-decoration: none;
   }
-  
-  
+
     .header .navbar1 a,
     .header .navbar1 a i .fab {
       color: #fff;
@@ -323,9 +460,90 @@ body {
       padding: 22px;
     }
 
+   /* Need to edit */
     .main-program .programList {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      width: 75%;
+      margin-top: 0px;
     }
+
+    .main-program ul.programList li.prg-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #393c43b3;
+      color: white;
+      padding: 20px;
+    }
+
+    .main-program .button-prg {
+      display: none;
+    }
+
+    .main-program .desktop-btn {
+      width: 70%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 100px;
+      padding-top: 50px;
+    }
+
+    .main-program .button-desktop-prg {
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-size: 32px;
+      margin-left: 400px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .partner-section {
+      height: 250px;
+    }
+
+    .partner-section h2 {
+      padding-top: 3%;
+      margin-bottom: 1%;
+    }
+
+    .partners-list {
+      margin-bottom: 3%;
+      flex-wrap: nowrap;
+    }
+
+    .partners-logo1 {
+      mix-blend-mode: exclusion;
+    }
+
+    .partnersContainer {
+      margin-top: 4%;
+      width: 75%;
+    }
+
+  /* Footer */
+    .footerContainer {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .footerContainer .websiteLogo {
+      color: #0c0c0c;
+    }
+    
+    .footerContainer .copyrights {
+      line-height: 16px;
+      font-size: 12px;
+      color: #0c0c0c;
+      font-family: 'lato', sans-serif;
+      margin-top: 20px;
+    }
+
+    
   }

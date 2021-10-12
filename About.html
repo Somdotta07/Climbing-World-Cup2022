@@ -5,47 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone1 About page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
     <!-- Header NAV BARS -->
     <header class="header">
         <!-- Only for Desktop -->
-        <nav class="navbar1">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="">English</a>
-            <a href="">My Page</a>
-            <a href="">Logout</a>
-        </nav>
-       <nav class="navbar2 desktop">
-           <div class="logo desktop">
+        <div></div>
+        <div class="navbar1 mobile-display">
+            <a class ="navlist" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class ="navlist" href="#"><i class="fab fa-twitter"></i></a>
+            <a class ="navlist" href="">English</a>
+            <a class ="navlist" href="">My Page</a>
+            <a class ="navlist" href="">Logout</a>
+        </div>
+       <div class="navbar2 mobile-display">
+           <div class="logo mobile-display">
                <a href="index.html">
                    <img src="/media/rhombus.png" class="navbarlogo" alt="Nav Bar Logo">
                </a>
            </div>
-           <div class="navbarright desktop">
-               <!-- <a href="index.html">Home</a> -->
+           <div class="navbarright mobile-display">
+            <div></div>
+            
                <a href="About.html">About</a>
                <a href="">Program</a>
                <a href="">Join</a>
                <a href="">Sponsor</a>
                <a href="">News</a>
-               <button type="button">Coupe du Monde</button>
+               <button type="button" class="btn nav-btn mobile-display">Coupe du Monde</button>
            </div>
-       </nav>
-       <!-- Mobile Menu -->
-      <div class="menu-items">
-        <p>Home</p>
-        <p>About</p>
+        </div>
+      <!-- Mobile Menu -->
+      <div class="menu desktop-display">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="About.html">About</a></p>
         <p>Program</p>
         <p>Join</p>
         <p>Sponsor</p>
         <p>News</p>
-        
       </div>
-      <div class="hamburger-menu">
-        <a href="#" class="icon"><i class="fas fa-bars"></i></a>
+      <!-- Hamburger Menu--->
+      <div class="menu__toggler desktop-display"> 
+        <span></span>
       </div>
     </header>
     <main>
@@ -83,6 +85,28 @@
                 <img src="." alt="Past event2">
             </div>
         </section>
+         <!-- Partners -->
+         <section class="partner-section">
+            <h2>Partners</h2>
+            <p class="underline"></p>
+            <div class="partnersContainer">
+                <div class="partners-list">
+                    <img class="partners-logo1" src="." alt="Logo1" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="." alt="Logo2" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="." alt="Logo3" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="." alt="Logo4" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="." alt="Logo5" />
+                </div>
+            </div>
+    </section>
     </main>
     <footer>
         <!-- End Of the Page -->
@@ -96,6 +120,7 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/expertCard.js"></script>
 </body>
 </html>
