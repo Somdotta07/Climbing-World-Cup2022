@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+html {
+    box-sizing: border-box;
+}
+  
+* {
+      margin: 0;
+      padding: 0;
+}
+
+body {
+    font-family: "Lato" , Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 5;;
+}
+
+.header .navbar1 {
+    display: none;
+}
+
+.header .navbar2 {
+    display: none;
+}
+
+/* Hamburger Menu */
+.menu__toggler {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    height: 28px;
+    width: 28px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__toggler span,
+  .menu__toggler span::before,
+  .menu__toggler span::after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 2.5px;
+    background: #fafafa;
+    border-radius: 20px;
+    transition: 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .menu__toggler span::before {
+    top: -8px;
+  }
+  
+  .menu__toggler span::after {
+    top: 8px;
+  }
+
+  .menu__toggler.active > span {
+    background: transparent;
+  }
+
+  .menu__toggler.active > span::before, .menu__toggler.active > span::after {
+    background: #005c9c;
+    top: 0px;
+  }
+
+  .menu__toggler.active > span::before {
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+  }
+  .menu__toggler.active > span::after {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: -30%;
+  z-index: 998;
+  color: #005c9c;
+  background: rgba(219, 163, 163, 0.7);
+   -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+           clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  width: 50%;
+  height: 100%;
+  padding: 100px;
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+/* Main Container */
+.main-container,
+.about-info {
+  background-image: url("media/climbing-wall-background-1473870964r7z.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
+  color: #3d3d3d;
+  overflow: hidden;
+}
+
+.main-container .info {
+  z-index: 15;
+  padding-top: 8.375rem;
+  padding-bottom: 8.375rem;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.main-container .info h2 {
+  color: #ec5241;
+  font-size: 32px;
+}
+
+.main-container .info h1 {
+  background-image: url("media/infoh1bg.jpg");
+  background-position: bottom center;
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 40px;
+  font-family: 'COCOGOOSE-LETTERPRESS', Arial, sans-serif;
+}
+
+.main-container .info h1 span {
+  font-family: 'COCOGOOSE', Arial, sans-serif;
+}
+
+.main-container .info .infoWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.main-container .info .infoWrapper  .description {
+  background-color: rgb(235, 231, 231);
+  z-index: 1;
+  font-size: 16px;
+  line-height: 24px;
+  border: 5px solid #fff;
+  margin-top: 22px;
+  padding: 24px;
+}
+
+.main-container .info .info-date {
+  font-size: 36px;
+  font-family: 'COCOGOOSE', Arial, sans-serif;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.main-container .info .info-location {
+  font-size: 16px;
+}
+/* Program */
+.main-program {
+  background-image: url("media/main-program-bg.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.main-program .title {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.main-program .underline {
+  background-color: #ec5241;
+  width: 45px;
+  height: 2px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  margin-inline: auto;
+}
+
+.main-program ul.programList {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.main-program ul.programList li.prg-card {
+  width: 90%;
+  display: grid;
+  background-color: #ffffff20;
+  border: 2px solid white;
+  margin: 10px 2px 7px 18px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  color: #fff;
+}
+
+
+/* Only Mobile Display */
+@media only screen and (max-width: 768px) {
+    /* Toogle bar */
+    .menu {
+      width: 400px;
+      left: -300px;
+      padding: 150px;
+    }
+
+  .menu.active {
+    left: 0;
+  }
+  
+  .menu p {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .navbar1,
+  .navbar2,
+  .navnarright {
+      display: none;
+  }
+}
+
+/* End of Mobile Menu */
+
+/* Desktop version */
+
+@media (min-width: 768px) {
+    .header .navbar1 {
+      display: flex;
+      background-color: #3d3d3d;
+      padding: 10px 250px;
+      justify-content: flex-end;
+    }
+  
+    .header .navbar1 .navlist {
+      margin-right: 20px;
+      text-decoration: none;
+  }
+  
+  .header .navbar1 .navlist {
+      margin-right: 20px;
+  }
+  
+  .header .navbar1 a,
+  .header .navbar1 a i .fab {
+      color: #fff;
+      font-size: 16px;
+      padding: 2px 10px;
+  }
+  
+  .header .navbar2 {
+      display: flex;
+      background-color: #fff;
+      justify-content: space-between;
+      padding: 10px 200px;
+      border: 1px solid #fff;
+      box-shadow: 0 0.25rem 2rem 0.5rem rgba(0, 0, 0, 0.3); /* Need to update*/
+  }
+  
+  .header .navbar2 .logo {
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+  }
+  
+  .header .navbar2 .navbarright a,
+  .header .navbar2 .navbarright .nav-btn {
+      padding: 15px 20px;
+      margin: 10px 5px;
+      text-decoration: none;
+  }
+  
+  
+    .header .navbar1 a,
+    .header .navbar1 a i .fab {
+      color: #fff;
+      font-size: 16px;
+      padding: 2px 10px;
+    }
+  
+    .menu , 
+    .menu__toggler {
+        display: none;
+    }
+  
+    .main-container,
+    .about-info {
+        top: 100px;
+    }
+
+    .main-container .info {
+       padding-left: 14%;
+       padding-right: 14%;
+    }
+
+    .main-container .info h2 {
+      font-size: 36px;
+    }
+
+    .main-container .info h1 span {
+      font-size: 48px;
+    }
+
+    .main-container .info .infoWrapper  .description {
+      max-width: 65%;
+      margin-top: 12px;
+      padding: 22px;
+    }
+
+    .main-program .programList {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      gap: 10px;
+    }
+  }
