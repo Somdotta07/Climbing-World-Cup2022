@@ -102,8 +102,7 @@ body {
 
 
 /* Main Container */
-.main-container,
-.about-info {
+.main-container {
   background-image: url("media/climbing-wall-background-1473870964r7z.jpg");
   background-repeat: repeat-x;
   background-position: center;
@@ -114,16 +113,23 @@ body {
 }
 
 .main-container .info {
+  background-image: url("media/adventure-altitude-climb-cold-thumbnail.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  backdrop-filter: 8px;
   z-index: 15;
-  padding-top: 8.375rem;
-  padding-bottom: 8.375rem;
+  padding-top: 134px;
+  padding-bottom: 134px;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  margin-top: 100px;
 }
 
 .main-container .info h2 {
   color: #ec5241;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .main-container .info h1 {
@@ -134,8 +140,8 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-size: 40px;
-  font-family: 'COCOGOOSE-LETTERPRESS', Arial, sans-serif;
+  font-size: 48px;
+  font-family: 'COCOGOOSE-LETTERPRESS', sans-serif;
 }
 
 .main-container .info h1 span {
@@ -190,6 +196,7 @@ body {
   margin-bottom: 16px;
   margin-inline: auto;
 }
+
 /* Need to edit */
 .main-program ul.programList {
   width: 90%;
@@ -245,12 +252,16 @@ body {
 }
 
 /* Expert Card */
+.experts-section {
+  padding: 20px;
+}
 
-.experts h2{
+.experts-section h2 {
+  margin: 4px;
   text-align: center;
 }
 
-.experts .underline {
+.experts-section .underline {
   background-color: #ec5241;
   width: 45px;
   height: 2px;
@@ -259,19 +270,46 @@ body {
   margin-inline: auto;
 }
 
-.expertsInfo {
-  width: 90%;
-  margin-inline: auto;
-  margin-top: 10%;
+.featured-experts {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
-.expertsInfo .expertCard {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-block: 3%;
-  padding: 15px;
-  margin-right: 7px;
+.featured-experts img {
+  padding: 10px;
+  height: 120px;
+  background: url("media/chess_board.jpg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.info-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 20px;
+}
+
+.info-content h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.info-content .txt {
+  color: #ec5242;
+}
+
+.info-content hr {
+  display: inline-flex;
+  width: 30px;
+  color: #fafafa;
+}
+
+.info-content p {
+  color: #3d3d3d;
+  font-size: 12px;
 }
 /* Partner */
 .partner-section {
@@ -366,7 +404,7 @@ footer {
   }
   .navbar1,
   .navbar2,
-  .navnarright {
+  .navbarright {
       display: none;
   }
   .main-program .button-desktop-prg {
@@ -410,10 +448,15 @@ footer {
       border: 1px solid #fff;
       box-shadow: 0 0.25rem 2rem 0.5rem rgba(0, 0, 0, 0.3); /* Need to update*/
   }
+
+  .header .navbar2 .logo img {
+    width: 60%;
+  }
   
   .header .navbar2 .logo {
       display: flex;
       justify-content: flex-start;
+      width: 10%;
       padding: 10px;
   }
   
@@ -500,6 +543,21 @@ footer {
       text-decoration: underline;
       cursor: pointer;
     }
+    /* Featured Experts */
+
+    .info-content {
+      /* grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      padding: 0 10vw;  */
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+     }
+
+
+
+    /* Partners */
+    
     .partner-section {
       height: 250px;
     }
