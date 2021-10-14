@@ -11,7 +11,7 @@ const experts = [
     name: 'Akiyo Noguchi',
     rank: '1st',
     country: 'JPN',
-    info: 'Akiyo Noguchi is a Japanese professional rock climber, sport climber and boulderer.She is known for winning the IFSC Climbing World Cup in Bouldering four times.',
+    info: 'Akiyo Noguchi is a Japanese professional rock climber, sport climber and boulderer.',
     pictureUrl: 'media/Akiyo Noguchi.jpg',
   },
   {
