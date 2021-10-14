@@ -4,7 +4,7 @@
 
 
 # Capstone1
-  
+ # HTML/CSS & JavaScript - Microverse Assigment: Module 1 Capstone project - Climbing World Cup
 
 
 >HTML, CSS &amp; JS page-Climbing competition
@@ -20,10 +20,13 @@ It's a Capstone project
 - JavaScript
 
 ## Live Demo
-
-[Live Demo Link]
+To check the webpage click on the live demo: 
+[https://somdotta07.github.io/Capstone1/]
 
 ## Getting Started :
+Have a look at the linked video for more information about the development process and some features:
+
+- 
 
 ### Prerequisites
 VS code editor and gitbash 
@@ -37,8 +40,8 @@ VS code editor and gitbash
 
 ### Install
    node.js
-   <!-- font awesome
-   Cocogoose fonts -->
+   font awesome
+   Cocogoose fonts 
 
 ### Usage
 To open the project you can simply download and double click the index.html file
@@ -66,7 +69,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - Microverse
-- 
+- This website is a design created by Cindy Shin in Behance.
+[` https://www.behance.net/adagio07`](https://www.behance.net/adagio07)
 - coding partners
 
 
