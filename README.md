@@ -6,11 +6,8 @@
 # Capstone1
  # HTML/CSS & JavaScript - Microverse Assigment: Module 1 Capstone project - Climbing World Cup
 
-
 >HTML, CSS &amp; JS page-Climbing competition
-#Screenshot
-![screenshot] (media/Screenshot 2021-10-14 at 03-37-36 Capstone1 Coupe Du Monde 2022.png)
-It's a Capstone project
+![image](https://user-images.githubusercontent.com/84907743/137237715-bef0b07e-3aa7-4be0-a163-744ea1104f1a.png)
 
 ## Built With
 
