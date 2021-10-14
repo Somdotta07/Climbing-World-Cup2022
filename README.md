@@ -9,7 +9,7 @@
 
 >HTML, CSS &amp; JS page-Climbing competition
 
-![screenshot]
+![screenshot](https://somdotta07.github.io/Capstone1/)
 
 It's a Capstone project
 
