@@ -4,10 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Capstone1 About page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <script src="main.js"></script>
+    <!-- Header NAV BARS -->
+    <header class="header">
+        <!-- Only for Desktop -->
+         <div></div>
+        <div class="navbar1">
+            <a class ="navlist" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class ="navlist" href="#"><i class="fab fa-twitter"></i></a>
+            <a class ="navlist" href="">English</a>
+            <a class ="navlist" href="">My Page</a>
+            <a class ="navlist" href="">Logout</a>
+        </div>
+       <div class="navbar2 ">
+           <div class="logo">
+               <a href="index.html">
+                   <img src="media/Ifsc-logo2015.png" class="navbarlogo" alt="Nav Bar Logo">
+               </a>
+           </div>
+           <div class="navbarright mobile-display">
+            <div></div>
+            
+               <a href="index.html">Home</a>
+               <a href="">Program</a>
+               <a href="">Join</a>
+               <a href="">Sponsor</a>
+               <a href="">News</a>
+               <button type="button" class="btn nav-btn mobile-display">Coupe du Monde</button>
+           </div>
+        </div>
+      <!-- Mobile Menu -->
+      <div class="menu desktop-display">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="About.html">About</a></p>
+        <p>Program</p>
+        <p>Join</p>
+        <p>Sponsor</p>
+        <p>News</p>
+        <p><button type="button" class="menu-btn">Coupe du Monde</button></p>
+      </div> 
+      
+      <!--Hamburger Menu--> 
+      <div class="menu__toggler desktop-display"> 
+        <span></span>
+      </div>
+    </header>  
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Information -->
+        <section class="about-info">
+            <div class="info-container">
+            <h2 class="cheers">Hello Climbers!</h2>
+            <h1 class="heading">Coupe Du Monde <br> in Chamonix <span>2022</span></h1>
+            <!-- <div class="underlinefull"></div> -->
+            <div class="infoWrapper">
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate saepe officia quam, ad neque odit nobis! Natus, et quas dolorum quia tempore sunt totam aperiam possimus in eos a?
+                Culpa voluptates illum harum modi voluptas necessitatibus eligendi </div>
+             </div>
+             <div class="info-contact">
+                <p>Please contact us per email for any further questions
+                    about Summer Coupe du Monde 2022!</p>
+                <p class="info-email"><strong>@ifsc-climbing.org</strong></p>    
+             </div>
+            </div>
+        </section>
+        <!-- Logo with Banner-->
+        <section class="about-logo">
+            <h3>Coupe Du Monde <br> Chamonix <span>2022</span> Logo</h3>
+            <div class="underlinefull"></div>
+            <p class = "for-mobile">Lorem ipsum dolo it amet consectetur adipisicing elit. Veniam a hic aliquid </p>
+            <p class="for-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a hic aliquid fugiat corrupti dignissimos aspernatur amet atque distinctio consequuntur, culpa magni natus quaerat nesciunt. Nemo totam perferendis saepe doloremque!
+            Sequi corporis rerum eaque voluptate commodi obcaecati, soluta similique debitis id veniam, magni, ducimus rem odio. Eos, hic tempora adipisci minus provident accusantium veniam ratione possimus,  </p>
+           <div class="aboutlogoimg">
+               <img src="media/chamonix.png" alt="Website Logo">
+           </div>
+           <div class="border"></div>
+        </section>
+        <!-- Past Events -->
+        <section class="about-past">
+            <h3>See the Past Coupe Du Monde</h3>
+            <div class="underlinefull"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  delectus!
+            </p>
+            <div class="Container">
+                <img src="media/pasteventtwo.jpg" class= "image1" alt="Past event1">
+                <div class="overlay1">Climbing World Cup 2020</div>
+                <div></div>
+                <img src="media/pasteventtwo.jpg"  class= "image2" alt="Past event2">
+                <div class="overlay2">Climbing World Cup 2018</div>
+            </div>
+        </section>
+         <!-- Partners -->
+         <section class="partner-section">
+            <h2>Partners</h2>
+            <p class="underline"></p>
+            <div class="partnersContainer">
+                <div class="partners-list">
+                    <img class="partners-logo1" src="media/logoone.png" alt="Logo1" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/la_Sportiva.jpg" alt="Logo2" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/Logo_Petzl.jpg" alt="Logo3" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/The_North_Face.png" alt="Logo4" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/evolv-logo1.gif" alt="Logo5" />
+                </div>
+            </div>
+    </section>
+    </main>
+    <footer>
+        <!-- End Of the Page -->
+        <div class="footerContainer">
+            <div class="websiteLogo">
+                <img src="media/Ifsc-logo2015.png" class= "websitelogo"  alt="Website Logo">
+            </div>
+            <div class="copyrights">
+                <p> Coupe Du Monde 2022</p>
+                <p>This is a template website</p>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <!-- <script src="javascript/expertCard.js"></script> -->
 </body>
-</html>
+</html> 

@@ -4,10 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone1 Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <title>Capstone1 Coupe Du Monde 2022</title>
 </head>
 <body>
-    <script src="main.js"></script>
+    <!-- Header NAV BARS -->
+    <header class="header">
+        <!-- Only for Desktop -->
+        <nav>
+        <div class="navbar1 mobile-display">
+            <a class ="navlist" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class ="navlist" href="#"><i class="fab fa-twitter"></i></a>
+            <a class ="navlist" href="">English</a>
+            <a class ="navlist" href="">My Page</a>
+            <a class ="navlist" href="">Logout</a>
+        </div>
+       <div class="navbar2 mobile-display">
+           <div class="logo mobile-display">
+               <a href="index.html">
+                <img src="media/Ifsc-logo2015.png" class="navbarlogo" alt="Nav Bar Logo">
+               </a>
+           </div>
+           <div class="navbarright mobile-display">
+            <div></div>
+               <!-- <a href="index.html">Home</a> -->
+               <a href="About.html">About</a>
+               <a href="">Program</a>
+               <a href="">Join</a>
+               <a href="">Sponsor</a>
+               <a href="">News</a>
+               <button type="button" class="nav-btn">Coupe du Monde</button>
+           </div>
+        </div>
+      <!-- Mobile Menu -->
+      <div class="menu desktop-display">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="About.html">About</a></p>
+        <p>Program</p>
+        <p>Join</p>
+        <p>Sponsor</p>
+        <p>News</p>
+      </div>
+      <!--Hamburger Menu--> 
+      <div class="menu__toggler"> 
+        <span></span>
+      </div>
+    </nav>
+    </header>
+    <main class="main-container">
+        <section class="info">
+           <h2 class="cheers">Hello! Climbers from the World</h2> 
+           <h1 class="heading">Coupe Du Monde <br> in Chamonix <span>2022</span></h1>
+           <div class="infoWrapper">
+           <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate saepe officia quam, ad neque odit nobis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate saepe officia quam, ad neque odit nobis! </div>
+        </div>
+        <div class="info-date">2022.06.20(Mon)~22(Wed)</div>
+        <div class="info-location">@ 99, avenue de la Plage 74400 Chamonix,France</div>
+        </section>
+        <!-- Program -->
+        <section class="main-program">
+            <h2 class="title">Main Program</h2>
+            <p class="underline"></p>
+            <ul class="programList">
+                <li class="prg-card">
+                    <div class="prg-icon">
+                        <i class="material-icons"><span class="material-icons">
+                            man
+                            </span></i>
+                    </div>
+                   <div class="prg-title">
+                        Qualifier Round
+                   </div> 
+                   <div class="prg-des">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </li>
+                <li class="prg-card">
+                    <div class="prg-icon">
+                        <i class="material-icons"> <span class="material-icons">
+                            woman
+                            </span></i>
+                    </div>
+                   <div class="prg-title">
+                    Qualifier Round
+                   </div> 
+                   <div class="prg-des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </li>
+                <li class="prg-card">
+                    <div class="prg-icon">
+                        <i class="material-icons"> <span class="material-icons">
+                            emoji_events
+                            </span></i>
+                    </div>
+                   <div class="prg-title">
+                       Men's Final
+                   </div> 
+                   <div class="prg-des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </li>
+                <li class="prg-card">
+                    <div class="prg-icon">
+                        <i class="material-icons"> <span class="material-icons">
+                            emoji_events
+                            </span></i>
+                    </div>
+                   <div class="prg-title">
+                      Women's final
+                   </div> 
+                   <div class="prg-des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </li>
+                <li class="prg-card">
+                    <div class="prg-icon">
+                        <i class="material-icons"><span class="material-icons">
+                            celebration
+                            </span></i>
+                    </div>
+                   <div class="prg-title">
+                      Party
+                   </div> 
+                   <div class="prg-des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </li>
+            </ul>
+            <!-- Only Mobile -->
+            <div class="mobile-btn">
+            <button type="button" class="button-prg desktop-display">
+                Enroll now
+              </button>
+            </div>
+              <!-- Only Desktop -->
+            <div class="desktop-btn">
+              <button type="button" class="button-desktop-prg">
+               See the whole program
+              </button>
+            </div>
+        </section>
+        <!-- Expert Card -->
+        <section class="experts-section">
+            <h2>Experts</h2>
+            <p class="underline"></p>
+            <!-- Dynamic Page with JS -->
+            <div class="featured-experts">
+
+            </div>
+            <!-- <button type="button" class="btn-expand">More 
+                <i class="materia-icons">expand</i>
+            </button> -->
+        </section>
+    
+    
+        <!-- Partners -->
+        <section class="partner-section">
+            <h2>Partners</h2>
+            <p class="underline"></p>
+            <div class="partnersContainer">
+                <div class="partners-list">
+                    <img class="partners-logo1" src="media/logoone.png" alt="Logo1" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/la_Sportiva.jpg" alt="Logo2" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/Logo_Petzl.jpg" alt="Logo3" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/The_North_Face.png" alt="Logo4" />
+                  </div>
+                  <div class="partners-list">
+                    <img class="partners-logo1" src="media/evolv-logo1.gif" alt="Logo5" />
+                </div>
+            </div>
+    </section>
+    </main>
+        <!-- End Of the Page -->
+        <footer>
+            <!-- End Of the Page -->
+            <div class="footerContainer">
+                <div class="websiteLogo">
+                    <img src="media/Ifsc-logo2015.png" class= "websitelogo"  alt="Website Logo">
+                </div>
+                <div class="copyrights">
+                    <p> Coupe Du Monde 2022</p>
+                    <p>This is a template website</p>
+                </div>
+            </div>
+        </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/Speaker.js"></script>
 </body>
 </html>

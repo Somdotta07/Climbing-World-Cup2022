@@ -4,15 +4,13 @@
 
 
 # Capstone1
-  
-
+ # HTML/CSS & JavaScript - Microverse Assigment: Module 1 Capstone project - Climbing World Cup
 
 >HTML, CSS &amp; JS page-Climbing competition
+## Description
+The project is based on an online website for climbing World Cup.I took the guideline for this website created by Cindy Shin, but personalize the content. I created drawer menu bar for the mobile menu.I used the same colors and fonts as the original template.The images and background-images are taken from internet.You can go to the about page just by clicking About nav link and same you can come back to Home page with Home link or nav bar logo.This design is responsive.You can check the preview of the website below.
 
-![screenshot]
-
-It's a Capstone project
-
+![image](https://user-images.githubusercontent.com/84907743/137329161-549b14c5-564f-43a9-996a-e1ef883df8c9.png)
 ## Built With
 
 - HTML 
@@ -20,10 +18,13 @@ It's a Capstone project
 - JavaScript
 
 ## Live Demo
-
-[Live Demo Link]
+To check the webpage click on the live demo: 
+[https://somdotta07.github.io/Capstone1/]
 
 ## Getting Started :
+Have a look at the linked video for more information about the development process and some features:
+[https://www.loom.com/share/496c10bd96e8477f94b37c7845652fd5]
+- 
 
 ### Prerequisites
 VS code editor and gitbash 
@@ -37,8 +38,8 @@ VS code editor and gitbash
 
 ### Install
    node.js
-   <!-- font awesome
-   Cocogoose fonts -->
+   font awesome
+   Cocogoose fonts 
 
 ### Usage
 To open the project you can simply download and double click the index.html file
@@ -66,7 +67,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 - Microverse
-- 
+- This website is a design created by Cindy Shin in Behance.
+[` https://www.behance.net/adagio07`](https://www.behance.net/adagio07)
 - coding partners
 
 
