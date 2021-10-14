@@ -9,8 +9,6 @@
 
 >HTML, CSS &amp; JS page-Climbing competition
 
-![screenshot](https://somdotta07.github.io/Capstone1/)
-
 It's a Capstone project
 
 ## Built With
