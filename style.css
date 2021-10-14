@@ -103,10 +103,10 @@ body {
 
 /* Main Container */
 .main-container {
-  background-image: url("media/climbing-wall-background-1473870964r7z.jpg");
+  /* background-image: url("media/climbing-wall-background-1473870964r7z.jpg");
   background-repeat: repeat-x;
   background-position: center;
-  background-blend-mode: overlay;
+  background-blend-mode: overlay; */
   position: relative;
   color: #3d3d3d;
   overflow: hidden;
@@ -129,7 +129,7 @@ body {
 
 .main-container .info h2 {
   color: #ec5241;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .main-container .info h1 {
@@ -140,7 +140,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-size: 48px;
+  font-size: 40px;
   font-family: 'COCOGOOSE-LETTERPRESS', sans-serif;
 }
 
@@ -158,13 +158,14 @@ body {
   z-index: 1;
   font-size: 16px;
   line-height: 24px;
-  border: 5px solid #fff;
+  border: 2px solid transparent;
   margin-top: 22px;
   padding: 24px;
+  margin-right: 20px;
 }
 
 .main-container .info .info-date {
-  font-size: 36px;
+  font-size: 24px;
   font-family: 'COCOGOOSE', Arial, sans-serif;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -209,7 +210,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-block: 3%;
-  padding: 15px;
+  padding: 10px;
   margin-right: 7px;
   background-color: #ffffff20;
   border: 2px solid transparent;
@@ -345,9 +346,9 @@ body {
 
 
 .partners-list img {
-  filter:
+  /* filter:
     invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
-    brightness(102%) contrast(105%);
+    brightness(102%) contrast(105%); */
   margin-block: 10%;
 }
 
@@ -408,6 +409,14 @@ footer {
       display: none;
   }
   .main-program .button-desktop-prg {
+    display: none;
+  }
+
+  .partner-section {
+    display: none;
+  }
+
+  .footerContainer {
     display: none;
   }
 }
@@ -472,6 +481,13 @@ footer {
       color: #fff;
       font-size: 16px;
       padding: 2px 10px;
+    }
+
+    .nav-btn {
+      border: 4px solid #f44336;
+      color: #f44336;
+      font-weight: 700;
+      background-color: white;
     }
   
     .menu , 
@@ -545,63 +561,62 @@ footer {
     }
     /* Featured Experts */
 
-    .info-content {
-      /* grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
-      padding: 0 10vw;  */
-      display: flex;
-      flex-wrap: wrap;
-      width: 50%;
+    .featured-experts {
+      display: grid;
+      grid-template-columns: 300px 100px;
+      grid-template-rows: 200px 200px;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: -100px;
+      margin-left: 300px;
      }
-
-
-
+    
     /* Partners */
     
     .partner-section {
-      height: 250px;
+      height: 220px;
     }
 
     .partner-section h2 {
-      padding-top: 3%;
+      padding-top: 1%;
       margin-bottom: 1%;
     }
 
     .partners-list {
-      margin-bottom: 3%;
+      margin-bottom: 1%;
       flex-wrap: nowrap;
     }
 
-    .partners-logo1 {
-      mix-blend-mode: exclusion;
-    }
-
     .partnersContainer {
-      margin-top: 4%;
-      width: 75%;
+      margin-top: 2%;
+      width: 90%;
     }
 
   /* Footer */
-    .footerContainer {
-      height: 250px;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #fff;
-    }
-
-    .footerContainer .websiteLogo {
-      color: #0c0c0c;
-    }
-    
-    .footerContainer .copyrights {
-      line-height: 16px;
-      font-size: 12px;
-      color: #0c0c0c;
-      font-family: 'lato', sans-serif;
-      margin-top: 20px;
-    }
-
-    
+  .footerContainer {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0;
   }
+
+  .footerContainer .websiteLogo img {
+    width: 15%;
+    height: 70%;
+    margin-left: 490px;
+    margin-top: 100px;
+  }
+  
+  .footerContainer .copyrights {
+    width: 30%;
+    line-height: 16px;
+    font-size: 12px;
+    color: rgb(15, 15, 15);
+    font-family: 'lato', sans-serif;
+    margin-top: 120px;
+    margin-right: 400px ;
+    text-align: center;
+  }  
+}

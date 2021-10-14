@@ -5,7 +5,7 @@ const experts = [
     rank: '1st',
     country: 'CZE',
     info: 'A Czech professional rock climber, specializing in lead climbing and bouldering.',
-    pictureUrl: 'media/Adam Ondra.jpg',
+    pictureUrl: 'media/Adam.jpg',
   },
   {
     name: 'Akiyo Noguchi',
@@ -13,15 +13,13 @@ const experts = [
     country: 'JPN',
     info: 'Akiyo Noguchi is a Japanese professional rock climber, sport climber and boulderer.She is known for winning the IFSC Climbing World Cup in Bouldering four times.',
     pictureUrl: 'media/Akiyo Noguchi.jpg',
-    bg: 'media/chess_board.jpg',
   },
   {
     name: 'Aleksei Rubtsov',
     rank: '2nd',
     country: 'RUS',
     info: ' He has participated in the bouldering competitions and won the world climbing championships in bouldering in 2009.',
-    pictureUrl: 'media/Aleksei Rubtsov.jpg',
-    bg: 'media/chess_board.jpg',
+    pictureUrl: 'media/Aleksei.jpg',
   },
   {
     name: 'Alannah Yip',
@@ -29,23 +27,20 @@ const experts = [
     country: 'CAN',
     info: 'Alannah Yip is a Canadian engineer and sport climber. She won a gold medal at the American Climbing Championships 2020 in Los Angeles.',
     pictureUrl: 'media/Alannah_Yip.png',
-    bg: 'media/chess_board.jpg',
   },
   {
     name: 'Jan Hojer',
     rank: '3rd',
     country: 'Ger',
     info: 'Jan Hojer is a German professional rock climber. He is known for winning one World Cup and two European Championships in bouldering. ',
-    pictureUrl: 'media/Jan Hojer.jpg',
-    bg: 'media/chess_board.jpg',
+    pictureUrl: 'media/JanHojer.jpg',
   },
   {
     name: 'Fanny Gibert',
     rank: '3rd',
     country: 'FRA',
     info: 'Fanny is a devoted competition climber, who is mainly bouldering, and one of the strongest in the past few world cup seasons',
-    pictureUrl: 'media/Fanny Gibert.jpg',
-    bg: 'media/chess_board.jpg',
+    pictureUrl: 'media/FannyGibert.jpg',
   },
 ];
 

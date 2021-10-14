@@ -241,11 +241,34 @@ body {
   margin-bottom: 40px;
 }
 
+.Container {
+  position: relative;
+  text-align: center;
+  color: rgb(248, 246, 246);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .about-past .image {
   width: 100%;
   margin-block: 10%;
   cursor: pointer;
+  filter: blur(3px);
 }
 
 /* Partners */
@@ -294,7 +317,7 @@ footer {
 }
 
 .footerContainer {
-  height: 60px;
+  height: 50px;
   width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -421,6 +444,7 @@ footer {
   .info-container {
     width: 70%;
     margin-left: 250px;
+    margin-top: 120px;
   }
 
   .about-info h1 {
@@ -467,6 +491,28 @@ footer {
 
   .Container .image {
     padding: 20px;
+  }
+
+  .Container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
   }
 
 /* Partner */
