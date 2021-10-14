@@ -7,8 +7,10 @@
  # HTML/CSS & JavaScript - Microverse Assigment: Module 1 Capstone project - Climbing World Cup
 
 >HTML, CSS &amp; JS page-Climbing competition
-![image](https://user-images.githubusercontent.com/84907743/137237715-bef0b07e-3aa7-4be0-a163-744ea1104f1a.png)
+## Description
+The project is based on an online website for climbing World Cup.I took the guideline for this website created by Cindy Shin, but personalize the content. I created drawer menu bar for the mobile menu.I used the same colors and fonts as the original template.The images and background-images are taken from internet.You can go to the about page just by clicking About nav link and same you can come back to Home page with Home link or nav bar logo.This design is responsive.You can check the preview of the website below.
 
+![image](https://user-images.githubusercontent.com/84907743/137329161-549b14c5-564f-43a9-996a-e1ef883df8c9.png)
 ## Built With
 
 - HTML 
@@ -21,7 +23,7 @@ To check the webpage click on the live demo:
 
 ## Getting Started :
 Have a look at the linked video for more information about the development process and some features:
-
+[https://www.loom.com/share/496c10bd96e8477f94b37c7845652fd5]
 - 
 
 ### Prerequisites
