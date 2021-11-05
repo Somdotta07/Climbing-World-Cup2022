@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-# Capstone1
+# Climbing World Cup2022
  # HTML/CSS & JavaScript - Microverse Assigment: Module 1 Capstone project - Climbing World Cup
 
 >HTML, CSS &amp; JS page-Climbing competition
